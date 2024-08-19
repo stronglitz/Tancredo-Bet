@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const diceResult = document.getElementById('diceResult');
     const spinSlotsButton = document.getElementById('spinSlotsButton');
     const slotsResult = document.getElementById('slotsResult');
+    const playTigrinhoButton = document.getElementById('playTigrinhoButton');
+    const tigrinhoResult = document.getElementById('tigrinhoResult');
+    const playPokerButton = document.getElementById('playPokerButton');
+    const pokerResult = document.getElementById('pokerResult');
+    const playBaccaratButton = document.getElementById('playBaccaratButton');
+    const baccaratResult = document.getElementById('baccaratResult');
 
     // Jogo da Roleta
     spinButton.addEventListener('click', () => {
@@ -27,18 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Jogo de Dados
     rollDiceButton.addEventListener('click', () => {
-        const result = Math.floor(Math.random() * 6) + 1;
-        diceResult.textContent = `Resultado dos dados: ${result}`;
-    });
-
-    // Jogo de Slots
-    spinSlotsButton.addEventListener('click', () => {
-        const symbols = ['🍒', '🍋', '🍊', '🍉', '🍇'];
-        const result = [];
-        for (let i = 0; i < 3; i++) {
-            const symbol = symbols[Math.floor(Math.random() * symbols.length)];
-            result.push(symbol);
-        }
-        slotsResult.textContent = `Resultado dos slots: ${result.join(' | ')}`;
-    });
-});
+        const result
