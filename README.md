@@ -5,17 +5,19 @@ Este é um projeto escolar criado por Kauã Camargo Ribeiro para a escola Colég
 ## Tecnologias Utilizadas
 
 - HTML/CSS/JavaScript
-- React.js
-- Node.js
-- Python (Flask)
-- SQL
-- PHP
-- GitHub Pages
+- Three.js (para animações 3D)
+- Bootstrap (para design responsivo)
+- GitHub Pages (para publicação)
 
-## Como Executar
+## Jogos Incluídos
 
-Para visualizar o site, acesse [Tancredo Bet](https://seu_usuario.github.io/TancredoBet).
+1. **Roleta 3D**: Uma roleta giratória em 3D.
+2. **Dados 3D**: Um dado 3D que rola e exibe o resultado.
+3. **Slot Machines**: Um jogo de slot com animações e verificação de vitória.
 
-## Contato
+## Como Rodar Localmente
 
-Kauã Camargo Ribeiro - [email](mailto:kauacamargoribeiro@gmail.com)
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/SEU_USUARIO/tancredobet.git
+   cd tancredobet

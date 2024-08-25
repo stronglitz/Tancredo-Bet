@@ -1,22 +1,3 @@
-function playGame() {
-    const result = Math.random() < 0.5 ? "Você ganhou!" : "Você perdeu!";
-    const resultElement = document.getElementById('result');
-    resultElement.innerText = result;
-    resultElement.classList.add('animate__animated', 'animate__bounceIn');
-    setTimeout(() => {
-        resultElement.classList.remove('animate__animated', 'animate__bounceIn');
-    }, 1000);
-}
-
-function rollDice() {
-    const diceRoll = Math.floor(Math.random() * 6) + 1;
-    const diceResultElement = document.getElementById('diceResult');
-    diceResultElement.innerText = `Você rolou um ${diceRoll}!`;
-    diceResultElement.classList.add('animate__animated', 'animate__fadeIn');
-    setTimeout(() => {
-        diceResultElement.classList.remove('animate__animated', 'animate__fadeIn');
-    }, 1000);
-}
 function createRoulette() {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -40,7 +21,6 @@ function createRoulette() {
     animate();
 }
 
-document.getElementById('startRoulette').addEventListener('click', createRoulette);
 function createDice() {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -70,7 +50,6 @@ function createDice() {
     }, 2000);
 }
 
-document.getElementById('rollDice3D').addEventListener('click', createDice);
 function spinSlots() {
     const slotSymbols = ["🍒", "🍋", "🍊", "🍉", "🍇", "🍓"];
     const slots = document.querySelectorAll('.slot');
@@ -86,4 +65,6 @@ function spinSlots() {
     }, 1000);
 }
 
+document.getElementById('startRoulette').addEventListener('click', createRoulette);
+document.getElementById('rollDice3D').addEventListener('click', createDice);
 document.getElementById('spinSlots').addEventListener('click', spinSlots);
