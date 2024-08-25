@@ -31,3 +31,20 @@ button:hover {
 footer {
     margin-top: 50px;
 }
+.slots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.slot {
+    margin: 0 10px;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes spin {
+    from { transform: rotateX(0); }
+    to { transform: rotateX(360deg); }
+}
