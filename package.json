@@ -1,0 +1,6 @@
+"homepage": "https://SEU_USUARIO.github.io/tancredobet",
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    ...
+}
