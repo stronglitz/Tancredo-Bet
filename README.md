@@ -4,15 +4,15 @@ Este é um projeto escolar criado por Kauã Camargo Ribeiro para a escola Colég
 
 ## Tecnologias Utilizadas
 
-- HTML/CSS/JavaScript
-- Three.js (para animações 3D)
-- Bootstrap (para design responsivo)
-- GitHub Pages (para publicação)
+- **HTML/CSS/JavaScript**: Estrutura e estilos do site.
+- **Three.js**: Gráficos 3D e animações.
+- **Bootstrap**: Design responsivo e componentes.
+- **GitHub Pages**: Para publicação.
 
 ## Jogos Incluídos
 
-1. **Roleta 3D**: Uma roleta giratória em 3D.
-2. **Dados 3D**: Um dado 3D que rola e exibe o resultado.
+1. **Roleta 3D**: Uma roleta giratória em 3D com animação contínua.
+2. **Dados 3D**: Um dado 3D que gira e exibe o resultado.
 3. **Slot Machines**: Um jogo de slot com animações e verificação de vitória.
 
 ## Como Rodar Localmente

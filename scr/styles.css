@@ -36,6 +36,11 @@ button {
     to { transform: rotateX(360deg); }
 }
 
+#rouletteContainer, #diceContainer {
+    width: 100%;
+    height: 400px;
+}
+
 footer {
     margin-top: 50px;
 }
