@@ -2,7 +2,7 @@
 function startRoulette() {
     const roulette = document.getElementById('roulette');
     roulette.innerHTML = '';
-    const colors = ['red', 'green', 'blue', 'yellow', 'purple'];
+    const colors = ['#e74c3c', '#2ecc71', '#3498db', '#f39c12', '#9b59b6'];
     const result = colors[Math.floor(Math.random() * colors.length)];
     roulette.style.backgroundColor = result;
     roulette.innerText = `Cor: ${result}`;
