@@ -9,20 +9,21 @@
 <body>
     <header>
         <h1>⚽ Tancredo Bet 🏆</h1>
-        <p>📝 Projeto escolar por Kauã Camargo Ribeiro</p>
+        <p>📝 Projeto escolar feito por Kauã Camargo Ribeiro</p>
     </header>
 
     <main>
         <section class="betting">
             <h2>Faça sua aposta! 🎯</h2>
 
+            <!-- Jogos -->
             <div class="match">
                 <p>🏟️ <strong>Brasil 🇧🇷</strong> vs <strong>Argentina 🇦🇷</strong></p>
                 <label for="bet-brasil">Brasil: </label>
                 <input type="number" id="bet-brasil" placeholder="0">
                 <label for="bet-argentina">Argentina: </label>
                 <input type="number" id="bet-argentina" placeholder="0">
-                <button onclick="placeBet('Brasil', 'Argentina')">💸 Apostar</button>
+                <button onclick="placeBet('brasil', 'argentina')">💸 Apostar</button>
             </div>
 
             <div class="match">
@@ -31,7 +32,7 @@
                 <input type="number" id="bet-flamengo" placeholder="0">
                 <label for="bet-vasco">Vasco: </label>
                 <input type="number" id="bet-vasco" placeholder="0">
-                <button onclick="placeBet('Flamengo', 'Vasco')">💸 Apostar</button>
+                <button onclick="placeBet('flamengo', 'vasco')">💸 Apostar</button>
             </div>
 
             <div class="match">
@@ -40,7 +41,179 @@
                 <input type="number" id="bet-madrid" placeholder="0">
                 <label for="bet-barcelona">Barcelona: </label>
                 <input type="number" id="bet-barcelona" placeholder="0">
-                <button onclick="placeBet('Real Madrid', 'Barcelona')">💸 Apostar</button>
+                <button onclick="placeBet('madrid', 'barcelona')">💸 Apostar</button>
+            </div>
+
+            <!-- Adicionando mais 17 jogos -->
+            <div class="match">
+                <p>🏟️ <strong>Manchester United 🔴</strong> vs <strong>Liverpool 🔴</strong></p>
+                <label for="bet-mu">Manchester United: </label>
+                <input type="number" id="bet-mu" placeholder="0">
+                <label for="bet-liverpool">Liverpool: </label>
+                <input type="number" id="bet-liverpool" placeholder="0">
+                <button onclick="placeBet('mu', 'liverpool')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Bayern Munich 🔴</strong> vs <strong>Dortmund 🟡⚫</strong></p>
+                <label for="bet-bayern">Bayern Munich: </label>
+                <input type="number" id="bet-bayern" placeholder="0">
+                <label for="bet-dortmund">Dortmund: </label>
+                <input type="number" id="bet-dortmund" placeholder="0">
+                <button onclick="placeBet('bayern', 'dortmund')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Juventus ⚪⚫</strong> vs <strong>AC Milan ⚫🔴</strong></p>
+                <label for="bet-juventus">Juventus: </label>
+                <input type="number" id="bet-juventus" placeholder="0">
+                <label for="bet-acmilan">AC Milan: </label>
+                <input type="number" id="bet-acmilan" placeholder="0">
+                <button onclick="placeBet('juventus', 'acmilan')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>PSG 🔴🔵</strong> vs <strong>Marseille 🔵</strong></p>
+                <label for="bet-psg">PSG: </label>
+                <input type="number" id="bet-psg" placeholder="0">
+                <label for="bet-marseille">Marseille: </label>
+                <input type="number" id="bet-marseille" placeholder="0">
+                <button onclick="placeBet('psg', 'marseille')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Porto 🔵⚪</strong> vs <strong>Benfica 🔴⚪</strong></p>
+                <label for="bet-porto">Porto: </label>
+                <input type="number" id="bet-porto" placeholder="0">
+                <label for="bet-benfica">Benfica: </label>
+                <input type="number" id="bet-benfica" placeholder="0">
+                <button onclick="placeBet('porto', 'benfica')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Inter de Milão ⚫🔵</strong> vs <strong>Lazio 🔵⚪</strong></p>
+                <label for="bet-inter">Inter de Milão: </label>
+                <input type="number" id="bet-inter" placeholder="0">
+                <label for="bet-lazio">Lazio: </label>
+                <input type="number" id="bet-lazio" placeholder="0">
+                <button onclick="placeBet('inter', 'lazio')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Arsenal 🔴⚪</strong> vs <strong>Chelsea 🔵</strong></p>
+                <label for="bet-arsenal">Arsenal: </label>
+                <input type="number" id="bet-arsenal" placeholder="0">
+                <label for="bet-chelsea">Chelsea: </label>
+                <input type="number" id="bet-chelsea" placeholder="0">
+                <button onclick="placeBet('arsenal', 'chelsea')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Atlético Madrid 🔴⚪</strong> vs <strong>Sevilla ⚪🔴</strong></p>
+                <label for="bet-atletico">Atlético Madrid: </label>
+                <input type="number" id="bet-atletico" placeholder="0">
+                <label for="bet-sevilla">Sevilla: </label>
+                <input type="number" id="bet-sevilla" placeholder="0">
+                <button onclick="placeBet('atletico', 'sevilla')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Napoli ⚪🔵</strong> vs <strong>Roma 🔴</strong></p>
+                <label for="bet-napoli">Napoli: </label>
+                <input type="number" id="bet-napoli" placeholder="0">
+                <label for="bet-roma">Roma: </label>
+                <input type="number" id="bet-roma" placeholder="0">
+                <button onclick="placeBet('napoli', 'roma')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Ajax ⚪🔴</strong> vs <strong>PSV 🔴⚪</strong></p>
+                <label for="bet-ajax">Ajax: </label>
+                <input type="number" id="bet-ajax" placeholder="0">
+                <label for="bet-psv">PSV: </label>
+                <input type="number" id="bet-psv" placeholder="0">
+                <button onclick="placeBet('ajax', 'psv')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Galatasaray 🟡🔴</strong> vs <strong>Fenerbahçe 🟡🔵</strong></p>
+                <label for="bet-galatasaray">Galatasaray: </label>
+                <input type="number" id="bet-galatasaray" placeholder="0">
+                <label for="bet-fenerbahce">Fenerbahçe: </label>
+                <input type="number" id="bet-fenerbahce" placeholder="0">
+                <button onclick="placeBet('galatasaray', 'fenerbahce')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Portimonense ⚪🔵</strong> vs <strong>Marítimo 🟢</strong></p>
+                <label for="bet-portimonense">Portimonense: </label>
+                <input type="number" id="bet-portimonense" placeholder="0">
+                <label for="bet-marítimo">Marítimo: </label>
+                <input type="number" id="bet-marítimo" placeholder="0">
+                <button onclick="placeBet('portimonense', 'maritimo')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Salzburg ⚪🔴</strong> vs <strong>Red Bull ⚫🔴</strong></p>
+                <label for="bet-salzburg">Salzburg: </label>
+                <input type="number" id="bet-salzburg" placeholder="0">
+                <label for="bet-redbull">Red Bull: </label>
+                <input type="number" id="bet-redbull" placeholder="0">
+                <button onclick="placeBet('salzburg', 'redbull')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Zenit ⚪🔵</strong> vs <strong>Dynamo Moscow 🟠🔵</strong></p>
+                <label for="bet-zenit">Zenit: </label>
+                <input type="number" id="bet-zenit" placeholder="0">
+                <label for="bet-dynamo">Dynamo Moscow: </label>
+                <input type="number" id="bet-dynamo" placeholder="0">
+                <button onclick="placeBet('zenit', 'dynamo')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Club América 🔵🔶</strong> vs <strong>Cruz Azul 🔵</strong></p>
+                <label for="bet-america">Club América: </label>
+                <input type="number" id="bet-america" placeholder="0">
+                <label for="bet-cruzazul">Cruz Azul: </label>
+                <input type="number" id="bet-cruzazul" placeholder="0">
+                <button onclick="placeBet('america', 'cruzazul')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Toronto FC 🔴⚪</strong> vs <strong>LA Galaxy 🔵⚪</strong></p>
+                <label for="bet-toronto">Toronto FC: </label>
+                <input type="number" id="bet-toronto" placeholder="0">
+                <label for="bet-lagalaxy">LA Galaxy: </label>
+                <input type="number" id="bet-lagalaxy" placeholder="0">
+                <button onclick="placeBet('toronto', 'lagalaxy')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Chicago Fire 🔴</strong> vs <strong>NYCFC 🔵⚪</strong></p>
+                <label for="bet-chicago">Chicago Fire: </label>
+                <input type="number" id="bet-chicago" placeholder="0">
+                <label for="bet-nycfc">NYCFC: </label>
+                <input type="number" id="bet-nycfc" placeholder="0">
+                <button onclick="placeBet('chicago', 'nycfc')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Monterrey 🔵⚪</strong> vs <strong>Pumas 🔵</strong></p>
+                <label for="bet-monterrey">Monterrey: </label>
+                <input type="number" id="bet-monterrey" placeholder="0">
+                <label for="bet-pumas">Pumas: </label>
+                <input type="number" id="bet-pumas" placeholder="0">
+                <button onclick="placeBet('monterrey', 'pumas')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Gremio 🔵⚪</strong> vs <strong>Internacional 🔴⚪</strong></p>
+                <label for="bet-gremio">Gremio: </label>
+                <input type="number" id="bet-gremio" placeholder="0">
+                <label for="bet-internacional">Internacional: </label>
+                <input type="number" id="bet-internacional" placeholder="0">
+                <button onclick="placeBet('gremio', 'internacional')">💸 Apostar</button>
             </div>
 
             <div id="bet-result"></div>
