@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🃏 Jogo de Cartas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>🃏 Jogo de Cartas</h1>
+    </header>
+
+    <main>
+        <h2>Escolha uma carta e veja se tem sorte! 🍀</h2>
+        <p>Clique em uma carta para revelar.</p>
+        <div id="cards">
+            <!-- Adicione as cartas aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tancredo Bet. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const cards = ["🂡", "🂢", "🂣", "🂤", "🂥"];
+        const cardsContainer = document.getElementById('cards');
+
+        cards.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('card');
+            cardElement.innerHTML = '🂠';  // Carta virada para baixo
+
+            cardElement.addEventListener('click', () => {
+                cardElement.innerHTML = card;  // Revela a carta
+            });
+
+            cardsContainer.appendChild(cardElement);
+        });
+    </script>
+</body>
+</html>
