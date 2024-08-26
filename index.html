@@ -23,7 +23,8 @@
                 <input type="number" id="bet-brasil" placeholder="0">
                 <label for="bet-argentina">Argentina: </label>
                 <input type="number" id="bet-argentina" placeholder="0">
-                <button onclick="placeBet('brasil', 'argentina')">💸 Apostar</button>
+                <button onclick="placeBet('brasil', 'argentina', 'result-brasil-argentina')">💸 Apostar</button>
+                <div id="result-brasil-argentina" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -32,7 +33,8 @@
                 <input type="number" id="bet-flamengo" placeholder="0">
                 <label for="bet-vasco">Vasco: </label>
                 <input type="number" id="bet-vasco" placeholder="0">
-                <button onclick="placeBet('flamengo', 'vasco')">💸 Apostar</button>
+                <button onclick="placeBet('flamengo', 'vasco', 'result-flamengo-vasco')">💸 Apostar</button>
+                <div id="result-flamengo-vasco" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -41,7 +43,8 @@
                 <input type="number" id="bet-madrid" placeholder="0">
                 <label for="bet-barcelona">Barcelona: </label>
                 <input type="number" id="bet-barcelona" placeholder="0">
-                <button onclick="placeBet('madrid', 'barcelona')">💸 Apostar</button>
+                <button onclick="placeBet('madrid', 'barcelona', 'result-madrid-barcelona')">💸 Apostar</button>
+                <div id="result-madrid-barcelona" class="bet-result"></div>
             </div>
 
             <!-- Adicionando mais 17 jogos -->
@@ -51,7 +54,8 @@
                 <input type="number" id="bet-mu" placeholder="0">
                 <label for="bet-liverpool">Liverpool: </label>
                 <input type="number" id="bet-liverpool" placeholder="0">
-                <button onclick="placeBet('mu', 'liverpool')">💸 Apostar</button>
+                <button onclick="placeBet('mu', 'liverpool', 'result-mu-liverpool')">💸 Apostar</button>
+                <div id="result-mu-liverpool" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -60,7 +64,8 @@
                 <input type="number" id="bet-bayern" placeholder="0">
                 <label for="bet-dortmund">Dortmund: </label>
                 <input type="number" id="bet-dortmund" placeholder="0">
-                <button onclick="placeBet('bayern', 'dortmund')">💸 Apostar</button>
+                <button onclick="placeBet('bayern', 'dortmund', 'result-bayern-dortmund')">💸 Apostar</button>
+                <div id="result-bayern-dortmund" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -69,7 +74,8 @@
                 <input type="number" id="bet-juventus" placeholder="0">
                 <label for="bet-acmilan">AC Milan: </label>
                 <input type="number" id="bet-acmilan" placeholder="0">
-                <button onclick="placeBet('juventus', 'acmilan')">💸 Apostar</button>
+                <button onclick="placeBet('juventus', 'acmilan', 'result-juventus-acmilan')">💸 Apostar</button>
+                <div id="result-juventus-acmilan" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -78,7 +84,8 @@
                 <input type="number" id="bet-psg" placeholder="0">
                 <label for="bet-marseille">Marseille: </label>
                 <input type="number" id="bet-marseille" placeholder="0">
-                <button onclick="placeBet('psg', 'marseille')">💸 Apostar</button>
+                <button onclick="placeBet('psg', 'marseille', 'result-psg-marseille')">💸 Apostar</button>
+                <div id="result-psg-marseille" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -87,7 +94,8 @@
                 <input type="number" id="bet-porto" placeholder="0">
                 <label for="bet-benfica">Benfica: </label>
                 <input type="number" id="bet-benfica" placeholder="0">
-                <button onclick="placeBet('porto', 'benfica')">💸 Apostar</button>
+                <button onclick="placeBet('porto', 'benfica', 'result-porto-benfica')">💸 Apostar</button>
+                <div id="result-porto-benfica" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -96,7 +104,8 @@
                 <input type="number" id="bet-inter" placeholder="0">
                 <label for="bet-lazio">Lazio: </label>
                 <input type="number" id="bet-lazio" placeholder="0">
-                <button onclick="placeBet('inter', 'lazio')">💸 Apostar</button>
+                <button onclick="placeBet('inter', 'lazio', 'result-inter-lazio')">💸 Apostar</button>
+                <div id="result-inter-lazio" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -105,7 +114,8 @@
                 <input type="number" id="bet-arsenal" placeholder="0">
                 <label for="bet-chelsea">Chelsea: </label>
                 <input type="number" id="bet-chelsea" placeholder="0">
-                <button onclick="placeBet('arsenal', 'chelsea')">💸 Apostar</button>
+                <button onclick="placeBet('arsenal', 'chelsea', 'result-arsenal-chelsea')">💸 Apostar</button>
+                <div id="result-arsenal-chelsea" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -114,7 +124,8 @@
                 <input type="number" id="bet-atletico" placeholder="0">
                 <label for="bet-sevilla">Sevilla: </label>
                 <input type="number" id="bet-sevilla" placeholder="0">
-                <button onclick="placeBet('atletico', 'sevilla')">💸 Apostar</button>
+                <button onclick="placeBet('atletico', 'sevilla', 'result-atletico-sevilla')">💸 Apostar</button>
+                <div id="result-atletico-sevilla" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -123,25 +134,18 @@
                 <input type="number" id="bet-napoli" placeholder="0">
                 <label for="bet-roma">Roma: </label>
                 <input type="number" id="bet-roma" placeholder="0">
-                <button onclick="placeBet('napoli', 'roma')">💸 Apostar</button>
+                <button onclick="placeBet('napoli', 'roma', 'result-napoli-roma')">💸 Apostar</button>
+                <div id="result-napoli-roma" class="bet-result"></div>
             </div>
 
             <div class="match">
-                <p>🏟️ <strong>Ajax ⚪🔴</strong> vs <strong>PSV 🔴⚪</strong></p>
-                <label for="bet-ajax">Ajax: </label>
-                <input type="number" id="bet-ajax" placeholder="0">
-                <label for="bet-psv">PSV: </label>
-                <input type="number" id="bet-psv" placeholder="0">
-                <button onclick="placeBet('ajax', 'psv')">💸 Apostar</button>
-            </div>
-
-            <div class="match">
-                <p>🏟️ <strong>Galatasaray 🟡🔴</strong> vs <strong>Fenerbahçe 🟡🔵</strong></p>
+                <p>🏟️ <strong>Galatasaray 🔴🟡</strong> vs <strong>Fenerbahçe 🔵🔵</strong></p>
                 <label for="bet-galatasaray">Galatasaray: </label>
                 <input type="number" id="bet-galatasaray" placeholder="0">
                 <label for="bet-fenerbahce">Fenerbahçe: </label>
                 <input type="number" id="bet-fenerbahce" placeholder="0">
-                <button onclick="placeBet('galatasaray', 'fenerbahce')">💸 Apostar</button>
+                <button onclick="placeBet('galatasaray', 'fenerbahce', 'result-galatasaray-fenerbahce')">💸 Apostar</button>
+                <div id="result-galatasaray-fenerbahce" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -150,7 +154,8 @@
                 <input type="number" id="bet-portimonense" placeholder="0">
                 <label for="bet-marítimo">Marítimo: </label>
                 <input type="number" id="bet-marítimo" placeholder="0">
-                <button onclick="placeBet('portimonense', 'maritimo')">💸 Apostar</button>
+                <button onclick="placeBet('portimonense', 'maritimo', 'result-portimonense-marítimo')">💸 Apostar</button>
+                <div id="result-portimonense-marítimo" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -159,7 +164,8 @@
                 <input type="number" id="bet-salzburg" placeholder="0">
                 <label for="bet-redbull">Red Bull: </label>
                 <input type="number" id="bet-redbull" placeholder="0">
-                <button onclick="placeBet('salzburg', 'redbull')">💸 Apostar</button>
+                <button onclick="placeBet('salzburg', 'redbull', 'result-salzburg-redbull')">💸 Apostar</button>
+                <div id="result-salzburg-redbull" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -168,7 +174,8 @@
                 <input type="number" id="bet-zenit" placeholder="0">
                 <label for="bet-dynamo">Dynamo Moscow: </label>
                 <input type="number" id="bet-dynamo" placeholder="0">
-                <button onclick="placeBet('zenit', 'dynamo')">💸 Apostar</button>
+                <button onclick="placeBet('zenit', 'dynamo', 'result-zenit-dynamo')">💸 Apostar</button>
+                <div id="result-zenit-dynamo" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -177,7 +184,8 @@
                 <input type="number" id="bet-america" placeholder="0">
                 <label for="bet-cruzazul">Cruz Azul: </label>
                 <input type="number" id="bet-cruzazul" placeholder="0">
-                <button onclick="placeBet('america', 'cruzazul')">💸 Apostar</button>
+                <button onclick="placeBet('america', 'cruzazul', 'result-america-cruzazul')">💸 Apostar</button>
+                <div id="result-america-cruzazul" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -186,7 +194,8 @@
                 <input type="number" id="bet-toronto" placeholder="0">
                 <label for="bet-lagalaxy">LA Galaxy: </label>
                 <input type="number" id="bet-lagalaxy" placeholder="0">
-                <button onclick="placeBet('toronto', 'lagalaxy')">💸 Apostar</button>
+                <button onclick="placeBet('toronto', 'lagalaxy', 'result-toronto-lagalaxy')">💸 Apostar</button>
+                <div id="result-toronto-lagalaxy" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -195,7 +204,8 @@
                 <input type="number" id="bet-chicago" placeholder="0">
                 <label for="bet-nycfc">NYCFC: </label>
                 <input type="number" id="bet-nycfc" placeholder="0">
-                <button onclick="placeBet('chicago', 'nycfc')">💸 Apostar</button>
+                <button onclick="placeBet('chicago', 'nycfc', 'result-chicago-nycfc')">💸 Apostar</button>
+                <div id="result-chicago-nycfc" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -204,7 +214,8 @@
                 <input type="number" id="bet-monterrey" placeholder="0">
                 <label for="bet-pumas">Pumas: </label>
                 <input type="number" id="bet-pumas" placeholder="0">
-                <button onclick="placeBet('monterrey', 'pumas')">💸 Apostar</button>
+                <button onclick="placeBet('monterrey', 'pumas', 'result-monterrey-pumas')">💸 Apostar</button>
+                <div id="result-monterrey-pumas" class="bet-result"></div>
             </div>
 
             <div class="match">
@@ -213,10 +224,9 @@
                 <input type="number" id="bet-gremio" placeholder="0">
                 <label for="bet-internacional">Internacional: </label>
                 <input type="number" id="bet-internacional" placeholder="0">
-                <button onclick="placeBet('gremio', 'internacional')">💸 Apostar</button>
+                <button onclick="placeBet('gremio', 'internacional', 'result-gremio-internacional')">💸 Apostar</button>
+                <div id="result-gremio-internacional" class="bet-result"></div>
             </div>
-
-            <div id="bet-result"></div>
         </section>
     </main>
 
