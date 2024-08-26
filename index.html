@@ -15,14 +15,34 @@
     <main>
         <section class="betting">
             <h2>Faça sua aposta! 🎯</h2>
+
             <div class="match">
                 <p>🏟️ <strong>Brasil 🇧🇷</strong> vs <strong>Argentina 🇦🇷</strong></p>
                 <label for="bet-brasil">Brasil: </label>
                 <input type="number" id="bet-brasil" placeholder="0">
                 <label for="bet-argentina">Argentina: </label>
                 <input type="number" id="bet-argentina" placeholder="0">
-                <button onclick="placeBet()">💸 Apostar</button>
+                <button onclick="placeBet('Brasil', 'Argentina')">💸 Apostar</button>
             </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Flamengo 🔴⚫</strong> vs <strong>Vasco ⚪⚫</strong></p>
+                <label for="bet-flamengo">Flamengo: </label>
+                <input type="number" id="bet-flamengo" placeholder="0">
+                <label for="bet-vasco">Vasco: </label>
+                <input type="number" id="bet-vasco" placeholder="0">
+                <button onclick="placeBet('Flamengo', 'Vasco')">💸 Apostar</button>
+            </div>
+
+            <div class="match">
+                <p>🏟️ <strong>Real Madrid ⚪</strong> vs <strong>Barcelona 🔵🔴</strong></p>
+                <label for="bet-madrid">Real Madrid: </label>
+                <input type="number" id="bet-madrid" placeholder="0">
+                <label for="bet-barcelona">Barcelona: </label>
+                <input type="number" id="bet-barcelona" placeholder="0">
+                <button onclick="placeBet('Real Madrid', 'Barcelona')">💸 Apostar</button>
+            </div>
+
             <div id="bet-result"></div>
         </section>
     </main>
