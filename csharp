@@ -1,9 +1,0 @@
-
-### 5. **Publicação no GitHub Pages**
-
-1. **Inicialize o Repositório Git**:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
